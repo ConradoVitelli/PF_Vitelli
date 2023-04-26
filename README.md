@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Conrado Vitelli</h1>
 <h3 align="center">A trainee web developer who loves metal music and movies. 
-I have studied some other tools on Cordoba's Technological University, such as C#, SQL and MongoDB.</h3>
+I have studied some other tools/languages on Cordoba's Technological University, such as C#, SQL and MongoDB.</h3>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
