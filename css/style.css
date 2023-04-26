@@ -10,11 +10,11 @@ body {
     background-size: cover ;
     font-family: 'Manrope', sans-serif;
 }
-
+ 
 .navbar-container {
     display: flex;
     justify-content: space-between;
-    padding: 1%;
+    padding: 1%; 
 
 }
 
@@ -235,8 +235,9 @@ section div ul p {
 /*Page: Catalogo*/
 
 .carousel-item img {
-    height: 350px;
+    height: 400px;
     padding: 2%;
+    object-fit: cover;
 }
 
 .section-catalogo-container {
