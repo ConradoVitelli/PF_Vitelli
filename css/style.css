@@ -6,16 +6,39 @@ html {
 body {
     margin: 10px 0px 0px 0px;
     padding: 0px;
-    background-image: url("../MEDIA/background.png");
+    background-image: url("../media/background.png");
     background-size: cover ;
     font-family: 'Manrope', sans-serif;
 }
  
-.navbar-container {
+.div-navbar {
     display: flex;
     justify-content: space-between;
     padding: 1%; 
+}
 
+/*Media query | Navbar mobile*/
+@media screen and (max-width: 468px) {
+    .div-navbar {
+        display: none;
+    }
+}
+
+/*Media query tablet*/
+
+@media screen and (min-width: 469px) and (max-width: 968px) {
+    .div-navbar {
+        display: none;
+    }
+}
+
+
+/*Media Query Desktop*/
+
+@media screen and (min-width: 969px) {
+    .navbar-mobile {
+        display: none;
+    }
 }
 
 .button {
@@ -154,26 +177,8 @@ section div ul p {
 }
 
  /*Fin de mapa y seccion de contacto*/
-
- /*Dejanos tu mensaje*/
-
-.message-box-container {
-    background-color: rgb(24, 22, 22);
-    color: white;
-    width: 80%;
-    padding: 25px;
-    opacity: 95%;
-}
-
-.message-box {
-    background-color: white;
-    height: 200px;
-    border-radius: 2%;
-}
-
-/*fin de Dejanos tu mensaje*/
-
 /*Fin Contacto*/
+
 
 /*Page: Nosotros*/
 
