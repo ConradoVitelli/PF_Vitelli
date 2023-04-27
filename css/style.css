@@ -1,3 +1,8 @@
+/*DISCLAIMER SEGUNDA ENTREGA:
+LAS PAGINAS RESPONSIVE SON: INDEX Y CATALOGO (con catalogo.pag-2)
+*/
+
+
 html {
     margin: 0px;
     padding: 0px;
@@ -17,14 +22,22 @@ body {
     padding: 1%; 
 }
 
-/*Media query | Navbar mobile*/
+/*Media query | Mobile*/
 @media screen and (max-width: 468px) {
     .div-navbar {
         display: none;
     }
-    body {
-        margin-top: 5%;
+    .desktop-footer {
+        display: none;
     }
+    .section-index {
+        display: none;
+    }
+    .inside-text-index {
+        display: none;
+    }
+
+  
 }
 
 /*Media query tablet*/
@@ -33,13 +46,36 @@ body {
     .div-navbar {
         display: none;
     }
+    .desktop-footer {
+        display: none;
+    }
+    .section-index {
+        display: none;
+    }
+    .inside-text-index {
+        display: none;
+    }
+ 
 }
+
 
 
 /*Media Query Desktop*/
 
 @media screen and (min-width: 969px) {
     .navbar-mobile {
+        display: none;
+    }
+
+    .mobile-footer {
+        display: none;
+    }
+
+    .section-index-mobile {
+        display: none;
+    }
+
+    .inside-text-index-mobile {
         display: none;
     }
 }
@@ -82,7 +118,7 @@ footer{
     opacity: 95%;
     display: flex;
     height: fit-content;
-    
+    margin-bottom: 0px;
 }
 
 .LogoFooter {
@@ -102,11 +138,28 @@ footer{
     margin: 0% 0% 2% 0%;
     height: 120px;
 }
+.LogoFooter-mobile {
+    width: 80px;
+    float: left;
+    padding: 0px 20px 0px 0px;
+}
+.dev-logo-mobile {
+    height: 50%;
+}
 
+.text-footer-mobile{
+    color: white;
+    font-size: x-small;
+}
 /*Fin Footer*/
 
 /*Page: Index*/
 .section-index {
+    display: flex;
+    justify-content: center;
+}
+
+.section-index-mobile {
     display: flex;
     justify-content: center;
 }
@@ -123,14 +176,38 @@ footer{
     padding-top:10%;
 }
 
-section div div h1 {
+.inside-text-index-mobile {
+    background-color:  rgb(24, 22, 22); ;
+    opacity: 95%;
+    border-radius:50% ;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 35%;
+    margin-top: 50%;
+    text-align: center;
+    color: white;
+    padding-top:10%;
+}
+
+.h1-titulo {
     font-size: 55px;
     padding-top:5%;
     padding-bottom: 10%;
 }
+.h1-titulo-mobile {
+    font-size: 30px;
+    padding-top:5%;
+    padding-bottom: 10%;
+}
 
-section div div h2 {
-    font-size: 20px;
+.h2-subcontainer {
+    font-size: 24px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.h2-welcome-text-mobile {
+    font-size: 18px;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -255,7 +332,6 @@ section div ul p {
     margin: 3% 5% 3% 5%;
     background-color: rgb(24, 22, 22);
     border-radius: 25px;
-
     }
     
     .div-cat {
@@ -323,7 +399,7 @@ section div ul p {
         background-color:rgb(29, 28, 28) ;
         border-radius: 8px;
         padding: 12px 28px;
-        margin: 0% 43% 3% 43%;
+        margin: 0% 40% 3% 40%;
     }
 
     .arrow-next {
