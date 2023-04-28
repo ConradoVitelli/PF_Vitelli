@@ -37,6 +37,9 @@ body {
         display: none;
     }
 
+    .catalogo-desktop{
+        display: none;
+    }
   
 }
 
@@ -53,6 +56,9 @@ body {
         display: none;
     }
     .inside-text-index {
+        display: none;
+    }
+    .catalogo-desktop{
         display: none;
     }
  
@@ -76,6 +82,10 @@ body {
     }
 
     .inside-text-index-mobile {
+        display: none;
+    }
+
+    .catalogo-mobile {
         display: none;
     }
 }
