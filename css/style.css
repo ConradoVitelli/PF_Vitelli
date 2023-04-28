@@ -368,7 +368,7 @@ section div ul p {
         position: absolute;
         justify-content: center;
         color: white;
-        font-size: 20px;
+        font-size: medium;
         top: 50%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
