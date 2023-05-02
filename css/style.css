@@ -83,6 +83,27 @@ nav ul li a {
   justify-content: center;
 }
 
+.catalogo-mobile .catalogo-disclaimer, .catalogo-desktop .catalogo-disclaimer {
+  background-color: rgb(24, 22, 22);
+  color: white;
+  text-align: center;
+  font-size: large;
+  padding: 3px;
+  margin-top: 3%;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 25px;
+}
+
+.catalogo-mobile .section-catalogo-container, .catalogo-desktop .section-catalogo-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 3% 5% 3% 5%;
+  background-color: rgb(24, 22, 22);
+  border-radius: 25px;
+}
+
 .section-index .inside-text-index {
   background-color: rgb(24, 22, 22);
   opacity: 95%;
@@ -134,25 +155,6 @@ nav ul li a {
   object-fit: cover;
 }
 
-.catalogo-desktop .catalogo-disclaimer {
-  background-color: rgb(24, 22, 22);
-  color: white;
-  text-align: center;
-  font-size: large;
-  padding: 3px;
-  margin-top: 3%;
-  margin-left: 15%;
-  margin-right: 15%;
-  border-radius: 25px;
-}
-.catalogo-desktop .section-catalogo-container {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(3, 1fr);
-  margin: 3% 5% 3% 5%;
-  background-color: rgb(24, 22, 22);
-  border-radius: 25px;
-}
 .catalogo-desktop .section-catalogo-container .div-cat {
   position: relative;
   border-radius: 25px;
@@ -190,38 +192,7 @@ nav ul li a {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.catalogo-desktop .section-catalogo-container .div-cat .overlay-text-mobile {
-  position: absolute;
-  justify-content: center;
-  color: white;
-  font-size: small;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
 
-.catalogo-mobile .catalogo-disclaimer {
-  background-color: rgb(24, 22, 22);
-  color: white;
-  text-align: center;
-  font-size: large;
-  padding: 3px;
-  margin-top: 3%;
-  margin-left: 15%;
-  margin-right: 15%;
-  border-radius: 25px;
-}
-.catalogo-mobile .section-catalogo-container {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(3, 1fr);
-  margin: 3% 5% 3% 5%;
-  background-color: rgb(24, 22, 22);
-  border-radius: 25px;
-}
 .catalogo-mobile .section-catalogo-container .div-cat {
   position: relative;
   border-radius: 25px;

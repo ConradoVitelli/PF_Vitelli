@@ -7,24 +7,11 @@
 .catalogo-desktop {
 
     .catalogo-disclaimer {
-        background-color: $div-color; 
-        color: $white-letters;
-        text-align: center;
-        font-size: large;
-        padding: 3px;
-        margin-top: 3%;
-        margin-left:  15%;
-        margin-right:  15%;
-        border-radius: 25px;
+        @extend %catalogo-disc;
     }
 
     .section-catalogo-container {
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(3, 1fr);
-        margin: 3% 5% 3% 5%;
-        background-color: $div-color;
-        border-radius: $border-radius-box;
+        @extend %section-catalog-container;
 
             .div-cat {
                 position: relative;
@@ -66,20 +53,6 @@
                     transform: translate(-50%, -50%);
                     text-align: center;
                 }
-
-                .overlay-text-mobile { 
-                    position: absolute;
-                    justify-content: center;
-                    color: $white-letters;
-                    font-size: small;
-                    top: 50%;
-                    left: 50%;
-                    -webkit-transform: translate(-50%, -50%);
-                    -ms-transform: translate(-50%, -50%);
-                    transform: translate(-50%, -50%);
-                    text-align: center;
-                }
-            
             }
         }
 
@@ -88,24 +61,11 @@
 .catalogo-mobile {
 
     .catalogo-disclaimer {
-        background-color: $div-color; 
-        color: $white-letters;
-        text-align: center;
-        font-size: large;
-        padding: 3px;
-        margin-top: 3%;
-        margin-left:  15%;
-        margin-right:  15%;
-        border-radius: $border-radius-box;
+        @extend %catalogo-disc;
     }
 
     .section-catalogo-container {
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(3, 1fr);
-        margin: 3% 5% 3% 5%;
-        background-color: $div-color;
-        border-radius: $border-radius-box;
+        @extend %section-catalog-container;
 
             .div-cat {
                 position: relative;

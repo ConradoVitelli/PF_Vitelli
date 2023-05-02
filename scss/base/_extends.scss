@@ -21,3 +21,25 @@
     display: flex;
     justify-content: center;
 }
+
+%catalogo-disc {
+    background-color: $div-color; 
+    color: $white-letters;
+    text-align: center;
+    font-size: large;
+    padding: 3px;
+    margin-top: 3%;
+    margin-left:  15%;
+    margin-right:  15%;
+    border-radius: 25px;
+}
+
+%section-catalog-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 3% 5% 3% 5%;
+    background-color: $div-color;
+    border-radius: $border-radius-box;
+}
+
