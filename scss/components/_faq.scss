@@ -1,21 +1,33 @@
-.section-faq{
+
+.section-faq {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(24, 22, 22); 
-    opacity: 95%;
-    color: white;
+    background-color: $div-color; 
+    opacity: $opacity-reduced;
+    color: $white-letters;
     margin: 5% 2.5% 5% 2.5%;
-    border-radius: 25px;
+    border-radius: $border-radius-box;
     padding: 3% 3% 3% 3%;
-}
+    
+    .faq-container {
 
-.faq-title {
-    font-size: xx-large;
-    padding-bottom: 1%;
-}
+        .faq-square{
 
-.faq-paragraph {
-    padding-left: 5%;
-    padding-right: 5%;
+            .faq-title {
+                font-size: xx-large;
+                padding-bottom: 1%;
+            }
+
+        }
+
+        .faq-paragraph {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        
+    }
+    
+
+
 }

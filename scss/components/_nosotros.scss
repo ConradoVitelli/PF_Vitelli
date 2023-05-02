@@ -1,24 +1,24 @@
 .quienes-somos-container {
-    background-color: rgb(24, 22, 22);
-    opacity: 95%;
+    background-color: $div-color;
+    opacity: $opacity-reduced;
     margin-top: 5%;
     margin-bottom: 5%;
     display: flex;
-    color: white;
+    color: $white-letters;
     width: 100%;
     justify-content: center;
-}
-.quienes-somos {
-    display: flex;
-    justify-content: center;
-    padding: 4%;  
-}
 
-.nosotros-paragraph {
-    color: white;
-    font-size: x-large;
-    padding: 4%; 
-    width: 70%;
-    display: flex; 
-    justify-content: center;
+    .quienes-somos {
+        display: flex;
+        justify-content: center;
+        padding: $padding-nos;  
+    }
+    .nosotros-paragraph {
+        color: $white-letters;
+        font-size: x-large;
+        padding: $padding-nos; 
+        width: 70%;
+        display: flex; 
+        justify-content: center;
+    }
 }

@@ -4,74 +4,11 @@
     object-fit: cover;
 }
 
-.section-catalogo-container {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, 1fr);
-    margin: 3% 5% 3% 5%;
-    background-color: rgb(24, 22, 22);
-    border-radius: 25px;
-    }
-    
-    .div-cat {
-        position: relative;
-        border-radius: 25px;
-        margin: 7%;
-    }
-
-
-    .section-catalogo-container .div-cat img {
-        width: 100%;
-        height: 100%;
-        border-radius: 25px;
-    }
-
-    .div-cat:hover .overlay {
-        opacity: 1;
-    }
-
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: rgb(24, 22, 22);  
-    }
-
-    .overlay-text { 
-        position: absolute;
-        justify-content: center;
-        color: white;
-        font-size: medium;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-
-    .overlay-text-mobile { 
-        position: absolute;
-        justify-content: center;
-        color: white;
-        font-size: small;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
+.catalogo-desktop {
 
     .catalogo-disclaimer {
-        background-color: rgb(24, 22, 22); 
-        color: white;
+        background-color: $div-color; 
+        color: $white-letters;
         text-align: center;
         font-size: large;
         padding: 3px;
@@ -81,19 +18,164 @@
         border-radius: 25px;
     }
 
-    .img-format {
-        height: 230px;
+    .section-catalogo-container {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, 1fr);
+        margin: 3% 5% 3% 5%;
+        background-color: $div-color;
+        border-radius: $border-radius-box;
+
+            .div-cat {
+                position: relative;
+                border-radius: $border-radius-box;
+                margin: 7%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: $border-radius-box;
+                }
+
+                &:hover .overlay {
+                    opacity: 1;
+                }
+
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    transition: .5s ease;
+                    background-color: $div-color;  
+                }
+
+                .overlay-text { 
+                    position: absolute;
+                    justify-content: center;
+                    color: $white-letters;
+                    font-size: medium;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                }
+
+                .overlay-text-mobile { 
+                    position: absolute;
+                    justify-content: center;
+                    color: $white-letters;
+                    font-size: small;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                }
+            
+            }
+        }
+
+}
+
+.catalogo-mobile {
+
+    .catalogo-disclaimer {
+        background-color: $div-color; 
+        color: $white-letters;
+        text-align: center;
+        font-size: large;
+        padding: 3px;
+        margin-top: 3%;
+        margin-left:  15%;
+        margin-right:  15%;
+        border-radius: $border-radius-box;
     }
 
-    .navigation-catalog {
-        display: flex;
-        justify-content: center;
-        background-color:rgb(29, 28, 28) ;
-        border-radius: 8px;
-        padding: 12px 28px;
-        margin: 0% 40% 3% 40%;
-    }
+    .section-catalogo-container {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, 1fr);
+        margin: 3% 5% 3% 5%;
+        background-color: $div-color;
+        border-radius: $border-radius-box;
 
-    .arrow-next {
-        height: 30px;
+            .div-cat {
+                position: relative;
+                border-radius: 25px;
+                margin: 7%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: $border-radius-box;
+                }
+
+                &:hover .overlay {
+                    opacity: 1;
+                }
+
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    transition: .5s ease;
+                    background-color: $div-color;  
+                }
+
+                .overlay-text { 
+                    position: absolute;
+                    justify-content: center;
+                    color: $white-letters;
+                    font-size: medium;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                }
+
+                .overlay-text-mobile { 
+                    position: absolute;
+                    justify-content: center;
+                    color: $white-letters;
+                    font-size: small;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                }
+            
+            }
+        }
+     
+}
+
+.navigation-catalog {
+    display: flex;
+    justify-content: center;
+    background-color:$div-color ;
+    border-radius: 8px;
+    padding: 12px 28px;
+    margin: 0% 40% 3% 40%;
+
+    a{
+        text-decoration: none;
+        color: $white-letters;
     }
+}

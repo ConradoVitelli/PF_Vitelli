@@ -1,39 +1,59 @@
-footer{
-    background-color: rgb(24, 22, 22);
+.mobile-footer{
+    background-color: $div-color;
     padding: 40px 40px 0px 40px;
-    opacity: 95%;
+    opacity: $opacity-reduced;
     display: flex;
     height: fit-content;
     margin-bottom: 0px;
+
+    .LogoFooter-mobile {
+        width: 80px;
+        float: left;
+        padding: 0px 20px 0px 0px;
+    }
+
+    .text-footer-mobile{
+        color: $white-letters;
+        font-size: x-small;
+    }
+    .footer-dev {
+        color: $white-letters;
+        display: flex;
+        justify-content: space-around;
+        margin: 0% 0% 2% 0%;
+        height: 120px;
+    }
+    
+    .dev-logo-mobile {
+        height: 50%;
+    }
+
 }
 
-.LogoFooter {
-    width: 130px;
-    float: left;
-    padding: 0px 40px 0px 0px;
-}
-
-.footer-text {
-    color: white;
-}
-
-.footer-dev {
-    color: white;
+.desktop-footer {
+    background-color: $div-color;
+    padding: 40px 40px 0px 40px;
+    opacity: $opacity-reduced;
     display: flex;
-    justify-content: space-around;
-    margin: 0% 0% 2% 0%;
-    height: 120px;
-}
-.LogoFooter-mobile {
-    width: 80px;
-    float: left;
-    padding: 0px 20px 0px 0px;
-}
-.dev-logo-mobile {
-    height: 50%;
-}
+    height: fit-content;
+    margin-bottom: 0px;
 
-.text-footer-mobile{
-    color: white;
-    font-size: x-small;
+    .LogoFooter {
+        width: 130px;
+        float: left;
+        padding: 0px 40px 0px 0px;
+    }
+
+    .footer-text {
+        color: $white-letters;
+    }
+
+    .footer-dev {
+        color: $white-letters;
+        display: flex;
+        justify-content: space-around;
+        margin: 0% 0% 2% 0%;
+        height: 120px;
+    }
+    
 }

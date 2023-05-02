@@ -1,57 +1,57 @@
 .section-index {
-    display: flex;
-    justify-content: center;
+    @extend %section-index;
+
+    .inside-text-index {
+        background-color:  $div-color; ;
+        opacity: $opacity-reduced;
+        border-radius:50% ;
+        height: 600px;
+        width: 600px;
+        margin-bottom: 5%;
+        text-align: center;
+        color: $white-letters;
+        padding-top:10%;
+
+        .h1-titulo {
+            font-size: 55px;
+            padding-top:5%;
+            padding-bottom: 10%;
+        }
+
+        .h2-subcontainer {
+            font-size: 24px;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    }
+
 }
 
 .section-index-mobile {
-    display: flex;
-    justify-content: center;
-}
+    @extend %section-index;
 
-.inside-text-index {
-    background-color:  rgb(24, 22, 22); ;
-    opacity: 95%;
-    border-radius:50% ;
-    height: 600px;
-    width: 600px;
-    margin-bottom: 5%;
-    text-align: center;
-    color: white;
-    padding-top:10%;
-}
+    .inside-text-index-mobile {
+        background-color:  $div-color; ;
+        opacity: $opacity-reduced;
+        border-radius:50% ;
+        height: 300px;
+        width: 300px;
+        margin-bottom: 35%;
+        margin-top: 50%;
+        text-align: center;
+        color: $white-letters;
+        padding-top:10%;
+    }
 
-.inside-text-index-mobile {
-    background-color:  rgb(24, 22, 22); ;
-    opacity: 95%;
-    border-radius:50% ;
-    height: 300px;
-    width: 300px;
-    margin-bottom: 35%;
-    margin-top: 50%;
-    text-align: center;
-    color: white;
-    padding-top:10%;
-}
+    .h1-titulo-mobile {
+        font-size: 30px;
+        padding-top:5%;
+        padding-bottom: 10%;
+    }
 
-.h1-titulo {
-    font-size: 55px;
-    padding-top:5%;
-    padding-bottom: 10%;
-}
-.h1-titulo-mobile {
-    font-size: 30px;
-    padding-top:5%;
-    padding-bottom: 10%;
-}
-
-.h2-subcontainer {
-    font-size: 24px;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.h2-welcome-text-mobile {
-    font-size: 18px;
-    padding-left: 10%;
-    padding-right: 10%;
+    .h2-welcome-text-mobile {
+        font-size: 18px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }

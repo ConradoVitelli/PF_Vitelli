@@ -1,38 +1,43 @@
 .contacto-big-container {
     display: flex;
     justify-content: space-evenly;
+
+        .social-media-list {
+            background-color: $div-color;
+            opacity: $opacity-reduced;
+            height: fit-content; 
+            border-radius: 2%;
+            margin: 5%;
+            padding: $padd-contact;
+            color: $white-letters;   
+        }
+        a:visited {
+            color: $white-letters;
+            text-decoration: none;
+        }
+        
+        .item-contacto-int {
+            padding: $padd-contact;
+            cursor: pointer;
+        }
+        .item-contacto {
+            padding: $padd-contact;
+        }
+        
+        section div ul p {
+            color: $white-letters;
+            font-size: x-large ;
+        }
+
+    .map-contacto {
+        background-color: $div-color;
+        opacity: $opacity-reduced;
+        width: fit-content;
+        margin: 2%;
+        padding: $padd-contact;
+        border-radius: 2%;
+    }
+    
 }
 
-.map-contacto {
-    background-color: rgb(24, 22, 22);
-    opacity: 90%;
-    width: fit-content;
-    margin: 2%;
-    padding: 2%;
-    border-radius: 2%;
-}
-
-.social-media-list {
-    background-color: rgb(24, 22, 22);
-    opacity: 90%;
-    height: fit-content; 
-    border-radius: 2%;
-    margin: 5%;
-    padding: 2%;
-    color: white;
-}
-
-a:visited {
-    color: white;
-    text-decoration: none;
-}
-
-.item-contacto {
-    padding: 2%;
-    cursor: pointer;
-}
-
-section div ul p {
-    color: white;
-    font-size: x-large ;
-}
+   
