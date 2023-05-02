@@ -1,0 +1,22 @@
+.button {
+    @extend %buttons;
+}
+
+nav {
+
+    ul{
+
+        li{
+
+            a{
+                color: white;
+            }
+        }
+    }
+}
+
+.LogoNavIndex {
+    display: flex;
+    width: 100px;
+    padding-top: 2%;
+}

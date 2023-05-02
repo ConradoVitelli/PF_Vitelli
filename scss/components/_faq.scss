@@ -1,0 +1,21 @@
+.section-faq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24, 22, 22); 
+    opacity: 95%;
+    color: white;
+    margin: 5% 2.5% 5% 2.5%;
+    border-radius: 25px;
+    padding: 3% 3% 3% 3%;
+}
+
+.faq-title {
+    font-size: xx-large;
+    padding-bottom: 1%;
+}
+
+.faq-paragraph {
+    padding-left: 5%;
+    padding-right: 5%;
+}
