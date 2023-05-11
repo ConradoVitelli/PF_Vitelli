@@ -22,3 +22,29 @@
         justify-content: center;
     }
 }
+
+.quienes-somos-container-mob {
+    
+    background-color: $div-color;
+    opacity: $opacity-reduced;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    color: $white-letters;
+    width: 100%;
+    justify-content: center;
+
+    .quienes-somos {
+        display: flex;
+        justify-content: center;
+        padding: $padding-nos;  
+    }
+    .nosotros-paragraph {
+        color: $white-letters;
+        font-size: small;
+        padding: $padding-nos; 
+        width: 70%;
+        display: flex; 
+        justify-content: center;
+    }
+}

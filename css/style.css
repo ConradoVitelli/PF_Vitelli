@@ -60,6 +60,10 @@ nav ul li a {
   padding-top: 2%;
 }
 
+.navbar-mobile {
+  padding: 5%;
+}
+
 .button {
   background-color: rgb(24, 22, 22);
   padding: 12px 28px;
@@ -280,6 +284,30 @@ nav ul li a {
   justify-content: center;
 }
 
+.quienes-somos-container-mob {
+  background-color: rgb(24, 22, 22);
+  opacity: 95%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  color: white;
+  width: 100%;
+  justify-content: center;
+}
+.quienes-somos-container-mob .quienes-somos {
+  display: flex;
+  justify-content: center;
+  padding: 4%;
+}
+.quienes-somos-container-mob .nosotros-paragraph {
+  color: white;
+  font-size: small;
+  padding: 4%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
 .section-faq {
   display: flex;
   justify-content: center;
@@ -302,7 +330,7 @@ nav ul li a {
 
 .contacto-big-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .contacto-big-container .social-media-list {
   background-color: rgb(24, 22, 22);
@@ -328,7 +356,7 @@ nav ul li a {
   color: white;
   font-size: x-large;
 }
-.contacto-big-container .map-contacto {
+.contacto-big-container .map-contacto-desk {
   background-color: rgb(24, 22, 22);
   opacity: 95%;
   width: fit-content;
@@ -373,6 +401,12 @@ body {
   .catalogo-desktop {
     display: none;
   }
+  .map-contacto-desk {
+    display: none;
+  }
+  .quienes-somos-container {
+    display: none;
+  }
 }
 /*Media query tablet*/
 @media screen and (min-width: 469px) and (max-width: 968px) {
@@ -389,6 +423,12 @@ body {
     display: none;
   }
   .catalogo-desktop {
+    display: none;
+  }
+  .map-contacto-desk {
+    display: none;
+  }
+  .quienes-somos-container {
     display: none;
   }
 }
@@ -409,6 +449,21 @@ body {
   .catalogo-mobile {
     display: none;
   }
+  .social-media-containter-mobile {
+    display: none;
+  }
+  .quienes-somos-container-mob {
+    display: none;
+  }
 }
+/*
+ background-color: $div-color;
+    opacity: $opacity-reduced;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    color: $white-letters;
+    width: 100%;
+    justify-content: center;*/
 
 /*# sourceMappingURL=style.css.map */

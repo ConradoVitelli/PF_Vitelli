@@ -35,7 +35,15 @@ body {
     .catalogo-desktop{
         display: none;
     }
-  
+
+    .map-contacto-desk{
+        display: none;
+    }
+
+    .quienes-somos-container{
+        display: none;
+    }
+
 }
 
 /*Media query tablet*/
@@ -56,7 +64,15 @@ body {
     .catalogo-desktop{
         display: none;
     }
- 
+
+    .map-contacto-desk{
+        display: none;
+    }
+
+    .quienes-somos-container{
+        display: none;
+    }
+
 }
 
 
@@ -81,6 +97,14 @@ body {
     }
 
     .catalogo-mobile {
+        display: none;
+    }
+
+    .social-media-containter-mobile{
+        display: none;
+    }
+   
+    .quienes-somos-container-mob{
         display: none;
     }
 }

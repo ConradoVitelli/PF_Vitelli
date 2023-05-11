@@ -1,6 +1,6 @@
 .contacto-big-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
         .social-media-list {
             background-color: $div-color;
@@ -29,15 +29,18 @@
             font-size: x-large ;
         }
 
-    .map-contacto {
-        background-color: $div-color;
-        opacity: $opacity-reduced;
-        width: fit-content;
-        margin: 2%;
-        padding: $padd-contact;
-        border-radius: 2%;
-    }
-    
+        .map-contacto-desk {
+            background-color: $div-color;
+            opacity: $opacity-reduced;
+            width: fit-content;
+            margin: 2%;
+            padding: $padd-contact;
+            border-radius: 2%;
+
+        }
+        
 }
+
+
 
    

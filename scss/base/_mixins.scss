@@ -1,0 +1,21 @@
+@mixin quienes-somos-container ($bgc, $opa, $mar-top, $mar-bottom, $dis, $col, $wid, $just-cont) {
+
+    background-color: $bgc;
+    opacity: $opa;
+    margin-top: $mar-top;
+    margin-bottom: $mar-bottom;
+    display: $dis;
+    color: $col;
+    width: $wid;
+    justify-content: $just-cont;
+}
+
+/*
+ background-color: $div-color;
+    opacity: $opacity-reduced;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    color: $white-letters;
+    width: 100%;
+    justify-content: center;*/
