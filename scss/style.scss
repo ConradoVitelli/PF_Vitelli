@@ -1,10 +1,495 @@
-@import "base/variables";
-@import "components/footer";
-@import "components/header";
-@import "base/extends";
-@import "components/index";
-@import "components/catalogo";
-@import "components/nosotros";
-@import "components/faq";
-@import "components/contacto";
-@import "components/general";
+.mobile-footer {
+  background-color: rgb(24, 22, 22);
+  padding: 40px 40px 0px 40px;
+  opacity: 95%;
+  display: flex;
+  height: fit-content;
+  margin-bottom: 0px;
+}
+
+.mobile-footer .LogoFooter-mobile {
+  width: 80px;
+  float: left;
+  padding: 0px 20px 0px 0px;
+}
+
+.mobile-footer .text-footer-mobile {
+  color: white;
+  font-size: x-small;
+}
+
+.mobile-footer .footer-dev {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin: 0% 0% 2% 0%;
+  height: 120px;
+}
+
+.mobile-footer .dev-logo-mobile {
+  height: 50%;
+}
+
+.desktop-footer {
+  background-color: rgb(24, 22, 22);
+  padding: 40px 40px 0px 40px;
+  opacity: 95%;
+  display: flex;
+  height: fit-content;
+  margin-bottom: 0px;
+}
+
+.desktop-footer .LogoFooter {
+  width: 130px;
+  float: left;
+  padding: 0px 40px 0px 0px;
+}
+
+.desktop-footer .footer-text {
+  color: white;
+}
+
+.desktop-footer .footer-dev {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin: 0% 0% 2% 0%;
+  height: 120px;
+}
+
+nav ul li a {
+  color: white;
+}
+
+.LogoNavIndex {
+  display: flex;
+  width: 100px;
+  padding-top: 2%;
+}
+
+.navbar-mobile {
+  padding: 5%;
+}
+
+.button {
+  background-color: rgb(24, 22, 22);
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  margin: 8px;
+  display: inline-flex;
+  justify-content: center;
+  width: 80px;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: rgb(82, 81, 81);
+  transition: 0.7s ease;
+}
+
+.section-index-mobile, .section-index {
+  display: flex;
+  justify-content: center;
+}
+
+.catalogo-mobile .catalogo-disclaimer, .catalogo-desktop .catalogo-disclaimer {
+  background-color: rgb(24, 22, 22);
+  color: white;
+  text-align: center;
+  font-size: large;
+  padding: 3px;
+  margin-top: 3%;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 25px;
+}
+
+.catalogo-mobile .section-catalogo-container, .catalogo-desktop .section-catalogo-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 3% 5% 3% 5%;
+  background-color: rgb(24, 22, 22);
+  border-radius: 25px;
+}
+
+.section-index .inside-text-index {
+  background-color: rgb(24, 22, 22);
+  opacity: 95%;
+  border-radius: 50%;
+  height: 600px;
+  width: 600px;
+  margin-bottom: 5%;
+  text-align: center;
+  color: white;
+  padding-top: 10%;
+}
+
+.section-index .inside-text-index .h1-titulo {
+  font-size: 55px;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+.section-index .inside-text-index .h2-subcontainer {
+  font-size: 24px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.section-index-mobile .inside-text-index-mobile {
+  background-color: rgb(24, 22, 22);
+  opacity: 95%;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  margin-bottom: 35%;
+  margin-top: 50%;
+  text-align: center;
+  color: white;
+  padding-top: 10%;
+}
+
+.section-index-mobile .h1-titulo-mobile {
+  font-size: 30px;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+.section-index-mobile .h2-welcome-text-mobile {
+  font-size: 18px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.carousel-item img {
+  height: 400px;
+  padding: 2%;
+  object-fit: cover;
+}
+
+.catalogo-desktop .section-catalogo-container .div-cat {
+  position: relative;
+  border-radius: 25px;
+  margin: 7%;
+}
+
+.catalogo-desktop .section-catalogo-container .div-cat img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.catalogo-desktop .section-catalogo-container .div-cat:hover .overlay {
+  opacity: 1;
+}
+
+.catalogo-desktop .section-catalogo-container .div-cat .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgb(24, 22, 22);
+}
+
+.catalogo-desktop .section-catalogo-container .div-cat .overlay-text {
+  position: absolute;
+  justify-content: center;
+  color: white;
+  font-size: medium;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.catalogo-mobile .section-catalogo-container .div-cat {
+  position: relative;
+  border-radius: 25px;
+  margin: 7%;
+}
+
+.catalogo-mobile .section-catalogo-container .div-cat img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.catalogo-mobile .section-catalogo-container .div-cat:hover .overlay {
+  opacity: 1;
+}
+
+.catalogo-mobile .section-catalogo-container .div-cat .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgb(24, 22, 22);
+}
+
+.catalogo-mobile .section-catalogo-container .div-cat .overlay-text {
+  position: absolute;
+  justify-content: center;
+  color: white;
+  font-size: medium;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.catalogo-mobile .section-catalogo-container .div-cat .overlay-text-mobile {
+  position: absolute;
+  justify-content: center;
+  color: white;
+  font-size: small;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.navigation-catalog {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(24, 22, 22);
+  border-radius: 8px;
+  padding: 12px 28px;
+  margin: 0% 40% 3% 40%;
+}
+
+.navigation-catalog a {
+  text-decoration: none;
+  color: white;
+}
+
+.quienes-somos-container {
+  background-color: rgb(24, 22, 22);
+  opacity: 95%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  color: white;
+  width: 100%;
+  justify-content: center;
+}
+
+.quienes-somos-container .quienes-somos {
+  display: flex;
+  justify-content: center;
+  padding: 4%;
+}
+
+.quienes-somos-container .nosotros-paragraph {
+  color: white;
+  font-size: x-large;
+  padding: 4%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.quienes-somos-container-mob {
+  background-color: rgb(24, 22, 22);
+  opacity: 95%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  color: white;
+  width: 100%;
+  justify-content: center;
+}
+
+.quienes-somos-container-mob .quienes-somos {
+  display: flex;
+  justify-content: center;
+  padding: 4%;
+}
+
+.quienes-somos-container-mob .nosotros-paragraph {
+  color: white;
+  font-size: small;
+  padding: 4%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.section-faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(24, 22, 22);
+  opacity: 95%;
+  color: white;
+  margin: 5% 2.5% 5% 2.5%;
+  border-radius: 25px;
+  padding: 3% 3% 3% 3%;
+}
+
+.section-faq .faq-container .faq-square .faq-title {
+  font-size: xx-large;
+  padding-bottom: 1%;
+}
+
+.section-faq .faq-container .faq-paragraph {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.contacto-big-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contacto-big-container .social-media-list {
+  background-color: rgb(24, 22, 22);
+  opacity: 95%;
+  height: fit-content;
+  border-radius: 2%;
+  margin: 5%;
+  padding: 2%;
+  color: white;
+}
+
+.contacto-big-container a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.contacto-big-container .item-contacto-int {
+  padding: 2%;
+  cursor: pointer;
+}
+
+.contacto-big-container .item-contacto {
+  padding: 2%;
+}
+
+.contacto-big-container section div ul p {
+  color: white;
+  font-size: x-large;
+}
+
+.contacto-big-container .map-contacto-desk {
+  background-color: rgb(24, 22, 22);
+  opacity: 95%;
+  width: fit-content;
+  margin: 2%;
+  padding: 2%;
+  border-radius: 2%;
+}
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 10px 0px 0px 0px;
+  padding: 0px;
+  background-image: url("../media/background.png");
+  background-size: cover;
+  font-family: "Manrope", sans-serif;
+}
+
+.div-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+/*Media query | Mobile*/
+@media screen and (max-width: 468px) {
+  .div-navbar {
+    display: none;
+  }
+  .desktop-footer {
+    display: none;
+  }
+  .section-index {
+    display: none;
+  }
+  .inside-text-index {
+    display: none;
+  }
+  .catalogo-desktop {
+    display: none;
+  }
+  .map-contacto-desk {
+    display: none;
+  }
+  .quienes-somos-container {
+    display: none;
+  }
+}
+/*Media query tablet*/
+@media screen and (min-width: 469px) and (max-width: 968px) {
+  .div-navbar {
+    display: none;
+  }
+  .desktop-footer {
+    display: none;
+  }
+  .section-index {
+    display: none;
+  }
+  .inside-text-index {
+    display: none;
+  }
+  .catalogo-desktop {
+    display: none;
+  }
+  .map-contacto-desk {
+    display: none;
+  }
+  .quienes-somos-container {
+    display: none;
+  }
+}
+/*Media Query Desktop*/
+@media screen and (min-width: 969px) {
+  .navbar-mobile {
+    display: none;
+  }
+  .mobile-footer {
+    display: none;
+  }
+  .section-index-mobile {
+    display: none;
+  }
+  .inside-text-index-mobile {
+    display: none;
+  }
+  .catalogo-mobile {
+    display: none;
+  }
+  .social-media-containter-mobile {
+    display: none;
+  }
+  .quienes-somos-container-mob {
+    display: none;
+  }
+}
+
+
+/*# sourceMappingURL=style.scss.map */
