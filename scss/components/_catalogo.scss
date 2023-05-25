@@ -1,7 +1,11 @@
 .carousel-item img {
     height: 400px;
-    padding: 2%;
+    padding: 3%;
     object-fit: cover;
+}
+
+.carousel-inner {
+    margin-top: 4%;
 }
 
 .catalogo-desktop {
@@ -59,19 +63,26 @@
 }
 
 .catalogo-mobile {
-    font-family: 'Manrope', sans-serif;
 
     .catalogo-disclaimer {
         @extend %catalogo-disc;
     }
 
-    .section-catalogo-container {
-        @extend %section-catalog-container;
+        .section-catalogo-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(9, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            margin: 3% 5% 3% 5%;
+            background-color: $div-color;
+            border-radius: $border-radius-box;
 
-            .div-cat {
-                position: relative;
-                border-radius: 25px;
-                margin: 7%;
+        .div-cat {
+            position: relative;
+            border-radius: 25px;
+            margin: 7%;
+            
 
                 img {
                     width: 100%;
@@ -94,13 +105,14 @@
                     opacity: 0;
                     transition: .5s ease;
                     background-color: $div-color;  
+                    border-radius: 25px;
                 }
 
                 .overlay-text { 
                     position: absolute;
                     justify-content: center;
                     color: $white-letters;
-                    font-size: medium;
+                    font-size: large;
                     top: 50%;
                     left: 50%;
                     -webkit-transform: translate(-50%, -50%);
@@ -121,10 +133,10 @@
                     transform: translate(-50%, -50%);
                     text-align: center;
                 }
-            
+        
             }
         }
-    } 
+    }
 
 
 .navigation-catalog {
